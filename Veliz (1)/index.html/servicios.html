@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios | QUIMIPRODU</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #EAF8FF;
+    color: #164767;
+}
+h1, h2, h3 {
+    color: #12658A;
+}
+h1, .centrado {
+    text-align: center;
+}
+.caja {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #168AAD;
+    line-height: 1.7;
+}
+.portada {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.portada img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 8px;
+}
+.tabla-precios {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: white;
+    margin-top: 15px;
+}
+.tabla-precios th {
+    background: #4CC9D8;
+    color: white;
+    padding: 14px 8px;
+    border: 1px solid #168AAD;
+}
+.tabla-precios td {
+    padding: 14px 8px;
+    border: 1px solid #168AAD;
+}
+.tabla-precios tr:nth-child(even) {
+    background: #DDF3F5;
+}
+.tabla-precios img {
+    width: 85px;
+    height: 75px;
+    object-fit: contain;
+}
+.precio {
+    font-weight: bold;
+    color: #12658A;
+}
+.nota {
+    font-size: 13px;
+}
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+    .tabla-precios th,
+    .tabla-precios td {
+        padding: 7px 4px;
+        font-size: 13px;
+    }
+    .tabla-precios img {
+        width: 55px;
+        height: 55px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Nuestros servicios y productos</h1>
+
+<div class="portada">
+    <h2>QUIMIPRODU</h2>
+
+    <p>
+        Productos para diferentes necesidades de limpieza e higiene.
+    </p>
+
+    <img src="productos.png"
+         alt="Presentación de los productos QUIMIPRODU">
+</div>
+
+<div class="caja">
+    <h2>¿Qué ofrecemos?</h2>
+
+    <p>
+        QUIMIPRODU presenta una propuesta de productos químicos
+        destinados a diferentes tareas de limpieza, higiene y
+        mantenimiento de espacios. Nuestro catálogo incluye cloro,
+        desinfectante y jabón líquido, tres opciones que cuentan
+        con características y aplicaciones diferentes.
+    </p>
+
+    <p>
+        El cloro puede utilizarse para determinados procesos
+        de limpieza y desinfección, siempre de acuerdo con
+        las indicaciones del fabricante. El desinfectante
+        está destinado a las superficies que indique su etiqueta,
+        mientras que el jabón líquido ayuda a retirar la suciedad
+        durante el lavado.
+    </p>
+
+    <p>
+        Mediante nuestra página web, buscamos facilitar la
+        consulta de los productos disponibles y sus precios.
+        De esta forma, los visitantes pueden conocer nuestra
+        propuesta sin tener que buscar la información en
+        diferentes lugares.
+    </p>
+
+    <p>
+        También promovemos la importancia de mantener los espacios
+        limpios y utilizar los productos de forma responsable.
+        Es fundamental leer las etiquetas, respetar las
+        instrucciones de uso, conservar los productos en sus
+        envases originales y no mezclar sustancias químicas.
+    </p>
+</div>
+
+<div class="caja">
+    <h2 class="centrado">Lista de precios QUIMIPRODU</h2>
+
+    <table class="tabla-precios">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Imagen</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Cloro</td>
+                <td>
+                    <img src="cloro.png" alt="Producto cloro">
+                </td>
+                <td class="precio">$2.99</td>
+            </tr>
+
+            <tr>
+                <td>Desinfectante</td>
+                <td>
+                    <img src="desinfectante.png"
+                         alt="Producto desinfectante">
+                </td>
+                <td class="precio">$3.00</td>
+            </tr>
+
+            <tr>
+                <td>Jabón líquido</td>
+                <td>
+                    <img src="jabonliquido.png"
+                         alt="Producto jabón líquido">
+                </td>
+                <td class="precio">$2.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="nota">
+        Todos los precios están expresados en dólares
+        estadounidenses (USD).
+    </p>
+</div>
+
+<div class="caja">
+    <h2>Compromiso con la limpieza responsable</h2>
+
+    <p>
+        En QUIMIPRODU consideramos importante informar sobre
+        los productos que presentamos y fomentar su uso adecuado.
+        Cada producto debe emplearse únicamente para los fines
+        indicados en su etiqueta y mantenerse fuera del alcance
+        de los niños.
+    </p>
+
+    <p>
+        Si necesitas consultar información sobre alguno de
+        nuestros productos, puedes visitar la sección Contacto
+        de nuestra página principal.
+    </p>
+</div>
+
+</body>
+</html>

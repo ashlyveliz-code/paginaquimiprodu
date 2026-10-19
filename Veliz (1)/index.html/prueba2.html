@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa Provincia de Bolívar</title>
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #EAF8FF;
+            color: #164767;
+        }
+
+        header {
+            background: #168AAD;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #DDF5FF;
+            text-shadow: 1px 1px 3px #075578;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            font-size: 17px;
+            color: #FFFFFF;
+        }
+
+        .contenedor {
+            display: flex;
+            min-height: 500px;
+        }
+
+        aside {
+            width: 200px;
+            background: #12658A;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+
+        .menu {
+            padding: 15px 0;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid #3B9BC2;
+            transition: background 0.3s;
+        }
+
+        .menu a:hover {
+            background: #55B9E8;
+            color: #073B57;
+        }
+
+        .redes {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .redes img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .wix {
+            display: block;
+            color: #DDF5FF;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .wix:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .pie-menu {
+            margin-top: auto;
+            background: #08415E;
+            padding: 15px 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #EAF8FF;
+        }
+
+        main {
+            flex: 1;
+            padding: 15px;
+            min-width: 0;
+        }
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 470px;
+            border: 2px solid #55B9E8;
+            border-radius: 8px;
+            background: white;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background: #168AAD;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: row;
+                gap: 10px;
+                padding: 15px 10px;
+            }
+
+            .logo {
+                width: 65px;
+                height: 65px;
+            }
+
+            .titulo {
+                flex: 1;
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            .contenedor {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            .menu {
+                padding: 5px 0;
+            }
+
+            .menu a {
+                padding: 12px;
+                text-align: center;
+            }
+
+            .redes {
+                padding: 10px;
+            }
+
+            .pie-menu {
+                margin-top: 0;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            iframe {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="Pb logo.jpg" alt="Logo del colegio">
+        </div>
+
+        <div class="titulo">
+            <h1>Unidad Educativa Fiscal Provincia de Bolívar</h1>
+            <p><i>Comprometidos con la limpieza y el bienestar.</i></p>
+        </div>
+    </header>
+
+    <div class="contenedor">
+
+        <aside>
+         <div class="menu">
+             <a href="EmpresaPB.html" target="contenido">Inicio</a>
+             <a href="nosotros.html" target="contenido">Nosotros</a>
+             <a href="servicios.html" target="contenido">Servicios</a>
+             <a href="noticias.html" target="contenido">Noticias</a>
+             <a href="contacto.html" target="contenido">Contacto</a>
+         </div>
+
+            <div class="redes">
+                <a href="https://www.facebook.com/ProvBolivar"
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="facebook.webp" alt="Facebook">
+                </a>
+
+                <a href="https://colegioprovinciabo.wixsite.com/provinciadebolivar"
+                   target="_blank" rel="noopener noreferrer" class="wix">
+                    Visítanos en Wix
+                </a>
+            </div>
+
+            <div class="pie-menu">
+                © 2026 Unidad Educativa Provincia de Bolívar.
+                Todos los derechos reservados.
+            </div>
+        </aside>
+
+        <main>
+            <iframe src="EmpresaPB.html" name="contenido"
+                    title="Contenido de la página"></iframe>
+        </main>
+
+    </div>
+
+    <footer>
+        Unidad Educativa Provincia de Bolívar
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | QUIMIPRODU</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #EAF8FF;
+    color: #164767;
+}
+h1, h2, h3 {
+    color: #12658A;
+}
+h1 {
+    text-align: center;
+}
+.caja {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #168AAD;
+    line-height: 1.7;
+}
+.logo {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px auto 20px;
+}
+a {
+    color: #12658A;
+    overflow-wrap: anywhere;
+}
+.boton {
+    display: inline-block;
+    background: #168AAD;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+.boton:hover {
+    background: #12658A;
+}
+input, textarea, select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #55B9E8;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+textarea {
+    resize: vertical;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Contáctanos</h1>
+
+<div class="caja">
+    <img class="logo" src="logo.png"
+         alt="Logotipo de QUIMIPRODU">
+
+    <h2>Estamos para ayudarte</h2>
+
+    <p>
+        Gracias por visitar QUIMIPRODU. Si deseas obtener
+        información sobre nuestros productos de limpieza,
+        sus precios o nuestro proyecto estudiantil, puedes
+        comunicarte con nosotros mediante los siguientes medios.
+    </p>
+</div>
+
+<div class="caja">
+    <h2>Información de contacto</h2>
+
+    <p>
+        <strong>Proyecto:</strong> QUIMIPRODU
+    </p>
+
+    <p>
+        <strong>Institución:</strong>
+        Unidad Educativa Fiscal Provincia de Bolívar
+    </p>
+
+    <p>
+        <strong>Teléfono:</strong>
+        <a href="tel:+593997579553">099 757 9553</a>
+    </p>
+
+    <p>
+        <strong>WhatsApp:</strong>
+        <a href="https://wa.me/593997579553"
+           target="_blank" rel="noopener noreferrer">
+            Enviar mensaje por WhatsApp
+        </a>
+    </p>
+
+    <p>
+        <strong>Facebook institucional:</strong>
+        <a href="https://www.facebook.com/ProvBolivar"
+           target="_blank" rel="noopener noreferrer">
+            Visitar Facebook
+        </a>
+    </p>
+
+    <p>
+        <strong>Página institucional:</strong>
+        <a href="https://colegioprovinciabo.wixsite.com/provinciadebolivar"
+           target="_blank" rel="noopener noreferrer">
+            Visitar sitio web
+        </a>
+    </p>
+</div>
+
+<div class="caja">
+    <h2>Formulario de consultas</h2>
+
+    <form onsubmit="enviarWhatsApp(event)">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"
+               placeholder="Escribe tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo"
+               placeholder="Escribe tu correo" required>
+
+        <label for="producto">Producto de interés:</label>
+        <select id="producto" required>
+            <option value="">Selecciona un producto</option>
+            <option value="Cloro - $2.99">Cloro - $2.99</option>
+            <option value="Desinfectante - $3.00">
+                Desinfectante - $3.00
+            </option>
+            <option value="Jabón líquido - $2.00">
+                Jabón líquido - $2.00
+            </option>
+            <option value="Información general">
+                Información general
+            </option>
+        </select>
+
+        <label for="mensaje">Tu consulta:</label>
+        <textarea id="mensaje" rows="4"
+                  placeholder="Escribe tu consulta"
+                  required></textarea>
+
+        <button type="submit" class="boton">
+            Continuar por WhatsApp
+        </button>
+
+    </form>
+
+    <p>
+        El formulario preparará un mensaje en WhatsApp.
+        Podrás revisarlo antes de enviarlo. No envía mensajes
+        automáticamente.
+    </p>
+</div>
+
+<div class="caja">
+    <h2>¡Gracias por visitarnos!</h2>
+
+    <p>
+        Agradecemos tu interés en nuestra propuesta estudiantil.
+        En QUIMIPRODU trabajamos para presentar nuestros productos
+        de manera organizada, combinando el emprendimiento
+        y los conocimientos tecnológicos.
+    </p>
+</div>
+
+<script>
+function enviarWhatsApp(event) {
+    event.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const producto = document.getElementById("producto").value;
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    const texto =
+        "Hola, soy " + nombre +
+        ". Mi correo es " + correo +
+        ". Me interesa: " + producto +
+        ". Mi consulta es: " + mensaje;
+
+    const enlace =
+        "https://wa.me/593997579553?text=" +
+        encodeURIComponent(texto);
+
+    window.open(enlace, "_blank", "noopener,noreferrer");
+}
+</script>
+
+</body>
+</html>
